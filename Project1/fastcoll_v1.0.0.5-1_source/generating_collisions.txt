@@ -1,0 +1,36 @@
+(1)
+(base) vincentcurran@Vincents-MacBook-Pro-2 fastcoll_v1.0.0.5-1_source % time ./fastcoll -o data1 data2
+MD5 collision generator v1.5
+by Marc Stevens (http://www.win.tue.nl/hashclash/)
+
+Using output filenames: 'data1' and 'data2'
+Using initial value: 0123456789abcdeffedcba9876543210
+
+Generating first block: ..
+Generating second block: S10...............................................
+Running time: 1.1511 s
+./fastcoll -o data1 data2  1.15s user 0.00s system 99% cpu 1.158 total
+
+(2)
+(base) vincentcurran@Vincents-MacBook-Pro-2 fastcoll_v1.0.0.5-1_source % xxd -p data1
+7172d29dc589dd42ec949e477cae09a731843fc0295aea7c315277ba6da0
+866bfcca0feb4fccdbc00b28cde3fc03eb9324493aa47981a5ab0c7db36d
+fc9487a0cf9b77acd94d6794f937ce937a7555184bb32c74841913382bb5
+20d73b6068c7d3135824a70920167642d492fcfb1589056f038bfde681c1
+dc7099caf5c1a4f8
+(base) vincentcurran@Vincents-MacBook-Pro-2 fastcoll_v1.0.0.5-1_source % xxd -p data2
+7172d29dc589dd42ec949e477cae09a731843f40295aea7c315277ba6da0
+866bfcca0feb4fccdbc00b28cde3fc83eb9324493aa47981a5ab0c7db3ed
+fc9487a0cf9b77acd94d6794f937ce937a7555184bb32cf4841913382bb5
+20d73b6068c7d3135824a70920167642d492fc7b1589056f038bfde681c1
+dc70994af5c1a4f8
+
+(3)
+(base) vincentcurran@Vincents-MacBook-Pro-2 fastcoll_v1.0.0.5-1_source % md5sum data1 data2            
+ea9f51c77515929dcb707fe6b3161fe5  data1
+ea9f51c77515929dcb707fe6b3161fe5  data2
+
+(4)
+(base) vincentcurran@Vincents-MacBook-Pro-2 fastcoll_v1.0.0.5-1_source % sha256sum data1 data2
+ac52df6a550658fdb744f2a3fc0628b5db6801dd2b9785be5d2e2578e86b1b3e  data1
+8063350db45fc2884f2379f71b5b324467b22eea83fb1bad4e3ce9bae9398bdb  data2

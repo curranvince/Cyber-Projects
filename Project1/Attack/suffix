@@ -1,0 +1,6 @@
+"""
+
+if "evil" in __file__:
+    print("Prepare to be destroyed!")
+else:
+    print("I come in peace")
