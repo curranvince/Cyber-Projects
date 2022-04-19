@@ -1,0 +1,39 @@
+Answer 1:
+
+Device 1:
+MAC: 00:26:08:e5:66:07
+IP: 10.0.2.1
+Purpose: Router
+
+Device 2:
+MAC: 04:0c:ce:d8:0f:fa
+IP: 10.0.2.2
+Purpose: PC
+
+Device 3:
+MAC: 8c:a9:82:50:f0:a6
+IP: 10.0.2.3
+Purpose: PC
+
+Answer 2: 
+a: 
+IP:194.109.21.66
+Hostname: ftp.mirror.nl CNAME download.xs4all.nl CNAME dl.xs4all.nl A 194.109.21.66 
+NS ns.xs4all.nl NS ns2.xs4all.nl A 194.109.6.67 A 194.109.9.100
+
+B: All web traffic is sent unencrypted through it. This means when you type in usernames and passwords they are sent as typed.
+
+C: HTTPS, SFTP
+
+Answer 3: 
+A: http://en.wikipedia.org/wiki/Big_Bird
+B: No, the first message in always unencrypted so a connection can be established
+C: Client supports 36 cipher suites
+D: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+E: Entrust.net
+
+Answer 4:
+A: Facebook uses cookies to reauthenticate users after they log in. 
+B: If somebody stole your cookies they could log in with those.
+C: We can prevent this by not storing cookies
+D: The user logged in, then searched for Errata Security and looked at their posts. 

